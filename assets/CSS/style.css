@@ -297,6 +297,11 @@
     line-height: 85%;
 }
 
+.lineheight90{
+    line-height: 90%;
+}
+
+
 
 @media only screen and (max-width: 800px){ 
     .thirtypixelfont{
@@ -374,8 +379,16 @@ a:hover{
     width:100%
 }
 
-wv100{
-    width: 100vw;
+.h75{
+    height:75%
+}
+
+.h25{
+    height:25%
+}
+
+.vh100{
+    height: 95vh
 }
 
 .linkimg{
@@ -439,6 +452,13 @@ wv100{
     position: absolute;
     bottom: 5%;
     left: 15%;
+    max-width: 60%;
+}
+
+.postmainlogo-wf{
+    position: absolute;
+    bottom: 22%;
+    left: 20%;
     max-width: 60%;
 }
 
@@ -551,6 +571,15 @@ wv100{
     right: 10%;
 }
 
+.nextlogo-wf{
+    position: absolute;
+    max-width: 70%;
+    max-height: 70%;
+    bottom: 30%;
+    /* z-index: 200; */
+    right: 15%;
+}
+
 .floatleft{
     float: left;
 }
@@ -585,3 +614,57 @@ wv100{
 .nexttextparent:hover .nexttext{
     display: block;
 }
+
+
+/* Graphic Design and Web Developement pages */
+
+.card{
+    height: 100vh;
+}
+
+.cardimg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+}
+
+.gdmainimage{
+    object-fit: cover;
+    width: 100%;
+    max-height: 30vh;
+}
+
+.subsectiontitle{
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    width: 75vw
+}
+
+@media only screen and (max-width: 750px){ 
+
+      .gdmainimage{
+        object-fit: cover;
+        width: 100%;
+        max-height: 18vh;
+    }
+
+    .subsectiontitle{
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        width: 75vw
+    }
+}
+
+@media only screen and (max-width: 575px){ 
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+      .wrapper div:first-child {
+        order: 1;
+      }
+
+    }
+
