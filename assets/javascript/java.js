@@ -67,7 +67,9 @@ $("#submitEs").on("click", function () {
     $("#contactform").addClass("p-3")
 
 })
+
 //NAVBAR SCROLL
+
 
 $(window).scroll(function(){
     $("#navbar").toggleClass("scroll" , $(this).scrollTop()> 10);
