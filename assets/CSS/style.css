@@ -342,6 +342,14 @@ a:hover{
     left: 17.5%;
     max-width: 60%;
 }
+
+.mainportfoliologosts{
+    position: absolute;
+    bottom: 45%;
+    left: 10%;
+    max-width: 80%;
+}
+
 .auxportfoliologo{
     position: absolute;
     bottom: 35%;
