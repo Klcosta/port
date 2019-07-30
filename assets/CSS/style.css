@@ -46,6 +46,10 @@
     text-align:justify;
 }
 
+.underline{
+    text-decoration: underline;
+}
+
 /* COLORS */
 
 .green {
@@ -468,6 +472,13 @@ a:hover{
     bottom: 22%;
     left: 20%;
     max-width: 60%;
+}
+
+.postmainlogo-hah{
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+    max-width: 40%;
 }
 
 .posthome{
