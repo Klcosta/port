@@ -96,7 +96,7 @@
 }
 
 .orangehover:hover{
-    color: #e98b2d;
+    color: #e98b2d !important;
 }
 
 .backgroundpattern{
@@ -265,6 +265,14 @@
 
 }
 
+@media only screen and (max-width: 500px){
+    .featuredworks{
+        font-size: 30px !important;
+    }
+
+
+}
+
 /* @media only screen and (max-width: 1110px){ 
     .smallertext{
         font-size: 14px
@@ -379,12 +387,24 @@ a:hover{
     filter: grayscale(100%);
 }
 
+.orangehoverbg:hover{
+    background-color: #e98b2d;
+}
+
 .whitehover:hover{
     filter: brightness(100%);
 }
 
 .h100{
     height:100%
+}
+
+.vh100{
+    height: 100vh
+}
+
+.h50{
+    height: 50%
 }
 
 .w100{
