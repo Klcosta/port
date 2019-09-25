@@ -1,0 +1,11 @@
+.box{
+    height: 50px;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right{
+    right: 15px;
+}
+

@@ -1,0 +1,64 @@
+.gdmainimage{
+    object-fit: cover;
+    width: 100%;
+    max-height: 30vh;
+}
+
+.showme{
+    display: none;
+}
+
+.showhim:hover .showme {
+    display: block;
+}
+
+.showhim{
+    height: 350px;
+}
+
+.subsectiontitle{
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    width: 75vw
+}
+
+.more{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.cardimg{
+    object-fit: cover;
+    width: 100%;
+    height: 350px; 
+}
+
+.testbox{
+    position: relative;
+    background: rgba(53,53,53,0.5);
+    top: -350px;
+    z-index: 2;
+    margin-right: 10px;
+}
+
+.h400{
+    height: 370px;
+}
+
+@media only screen and (max-width: 750px){ 
+
+      .gdmainimage{
+        object-fit: cover;
+        width: 100%;
+        max-height: 18vh;
+    }
+
+    .subsectiontitle{
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        width: 75vw
+    }
+}

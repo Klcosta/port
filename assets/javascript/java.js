@@ -36,7 +36,7 @@ $("#submit").on("click", function () {
     $("#submitrow").empty();
 
     //Fill Contact with Thanks Message
-    $("#contactform").html("<div class='col-12 border-0 rounded font green pl-4 py-3 rounded bg-white'> Dear " + name + ", <br><br>Thank you for reaching out. I greatly appreciate your interest in my work and services. I will get back in touch with you at " + email + " as soon as possible.<br><br> Sincerely, Keith Costa</div>")
+    $("#contactform").html("<div class='col-12 rounded font green pl-4 py-3 rounded bg-white greenborder1'> Dear " + name + ", <br><br>Thank you for reaching out. I greatly appreciate your interest in my work and services. I will get back in touch with you at " + email + " as soon as possible.<br><br> Sincerely, Keith Costa</div>")
 
     $("#contactform").addClass("p-3")
 
@@ -71,7 +71,6 @@ $("#submitEs").on("click", function () {
 //NAVBAR SCROLL
 
 
-
 $(window).scroll(function () {
     $("#navbar").toggleClass("scroll", $(this).scrollTop() > 10);
     $(".dropdown").toggleClass("scroll", $(this).scrollTop() > 10);
@@ -90,8 +89,92 @@ $("#white").on("click", (event) => {
     }
 })
 
-//SPANISH TO ENGLISH TRANSLATE
+//CHANGE BACKGROUND ON HOVER
 
-// $(window).scroll(function(){
-//     $("#english").attr("href","index.html#whatido").$(this).scrollTop(800)
-// })
+$("#graphicDesignButton")
+    .mouseover(
+        function(){
+            console.log("amazing")
+            $("#mainBgImage2").attr("src" , "assets/images/graphicdesignbg.jpg")
+            $("#mainBgImage2").fadeIn("slow")
+            $("#whitebox").fadeIn("slow")
+        }
+    )
+    .mouseout(function(){
+            console.log("less-amazing")
+            $("#mainBgImage2").fadeOut("slow")
+            $("#whitebox").fadeOut("slow")
+    })
+
+$("#webDevelopmentButton")
+    .mouseover(
+        function(){
+            console.log("amazing")
+            $("#mainBgImage2").attr("src" , "assets/images/webdevelopementbg.jpg")
+            $("#mainBgImage2").fadeIn("slow")
+            $("#whitebox").fadeIn("slow")
+        }
+    )
+    .mouseout(function(){
+            console.log("less-amazing")
+            $("#mainBgImage2").fadeOut("slow")
+            $("#whitebox").fadeOut("slow")
+    })
+
+//SLIDER//
+
+var reviews=["Keith has been an absolute pleasure to work with. He is very respectful of my ideas and wants to make sure that he works hard to bring my vision to life. Keith is extremely patient and talented. Anyone would be lucky to select Keith for a project. Thank you for everything you have done for me!" , "Working with Keith has been nothing but amazing!! He's always there, catches to things very quickly and had 100% of this work done in time. I will definitely recommend him. Quality of work was A+. No complaints, just great work, great communication!! Thank you Keith!", "Keith is a very passionate designer who strives to complete the design task with utmost diligence and quality exceeding expectations. He certainly proved to be a very reliable, dependable and resourceful designer - I plan to continue working with him on many projects I have in my roadmap. Thanks Keith - You are awesome!"]
+
+var reviewers=["Nate Holmes" , "Ari Berman" , "Bharat Kumar"]
+var organization = ["Secured Tech Solutions" ,  "UpWork Customer" , "EdNexus"]
+
+// Count will keep track of the index of the currently displaying picture.
+var count = 0;
+
+// This function will replace display whatever image it's given
+// in the 'src' attribute of the img tag.
+function displayReview() {
+    $("#reviews").html("<div class='text-center'>"  + reviews[count] + "</div><br> <div class='text-center'>" + reviewers[count] + "</div><div class='text-center'>" +organization[count] + "</div>");
+    nextImage()
+}
+
+function nextImage() {
+
+    // TODO: Use a setTimeout to run displayImage after 1 second.
+    t = setTimeout(displayReview, 15000);
+
+    console.log("1:" + count)
+    if (count === 2) {
+        count = 0;
+    }
+
+    else{count ++}
+
+    console.log("2:" + count)
+}
+
+function rightArrow() {
+    clearTimeout(t);
+    displayReview()
+}
+
+function leftArrow() {
+    clearTimeout(t);
+    console.log("clicked2.0  " + count)
+    if (count === 2){
+        console.log("yay")
+        count = 0
+    }
+    else{
+    count ++;
+    }
+    console.log("4:" + count)
+
+    displayReview()
+}
+
+// This will run the display image function as soon as the page loads.
+$("#rightArrow").click(rightArrow)
+$("#leftArrow").click(leftArrow)
+
+displayReview();

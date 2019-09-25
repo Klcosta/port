@@ -1,0 +1,178 @@
+#graphicdesign{
+    position:absolute;
+    bottom: 48px
+}
+
+.mainimage2test{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.buttons{
+    position: absolute;
+    top: 60%;
+    z-index: 2;
+    left: 0%;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.hometest{
+    background-image: url(../images/keithCostav4.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20%, 50%;
+}
+
+.mainlogo{
+    position: absolute;
+    bottom: 28%;
+    left: 29%;
+    max-width: 45%;
+    z-index: 3;
+}
+
+.display{
+    display: inline-block
+}
+
+.flexbox{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contents1{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: 45%;
+    z-index: 3;
+}
+
+.contents2{
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.whitebox{
+    background: white;
+    opacity: 0.9;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 650px;
+    height: 210px;
+    z-index: 2;
+    transform: translateX(-50%);
+    display: none;
+}
+
+ @media only screen and (max-width: 1055px){ 
+    .contents1{
+        font-size:39px;
+        top: 50%;
+    }
+    
+    .contents2{
+        font-size:18px;
+        top: 56%;
+    }
+
+    .display{
+        margin-top:10px;
+    }
+
+    .whitebox{
+        top: 51%;
+        height: 230px;
+        width: 400px;
+    }
+
+}
+
+
+@media only screen and (max-width: 765px){ 
+    .gdbttn{
+      float: none;
+      margin-bottom: 8px;
+    }
+ 
+    .wdbttn{
+      float: none;
+    }
+
+    .flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .contents1{
+        font-size:30px;
+        top: 55%;
+    }
+    
+    .contents2{
+        display: none;
+    }
+ }
+
+ @media only screen and (max-width: 610px){ 
+
+    .contents1{
+        top: 56%;
+        left: 70%;
+        width: 100%
+    }
+    
+    .whitebox{
+        display: block;
+        top: 55%;
+        left: 50%;
+        width: 300px;
+        transform: translateX(-50%);
+
+    }
+
+ }
+
+
+ @media only screen and (max-width: 380px){ 
+
+    .contents1{
+        top: 50%;
+        left: 55%;
+        width: 100%
+    }
+
+    .display{
+        font-size: 16px;
+    }
+
+    .buttons{
+        top: 55%;
+        left: 45%;
+    }
+
+    .whitebox{
+        display: block;
+        top: 50%;
+        left: 45%;
+        width: 300px;
+        height: 165px;
+        transform: translateX(-50%);
+
+    }
+    
+ }

@@ -1,0 +1,172 @@
+.postImg{
+    width:80%;
+    object-fit: contain;
+    object-position: 0 0;
+    height:100%;
+}
+
+.next{
+    height:100px;
+    max-width: 143px;
+    object-fit: cover;
+    float: left;
+}
+
+.prev{
+    height:50px;
+    max-width:80px;
+    float: right;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: #2f9583;
+}
+
+.nextlogo{ 
+    position: absolute;
+    max-width: 70%;
+    max-height: 70%;
+    bottom: 40%;
+    right: 15%;
+}
+
+.nextlogo-sc{ 
+    position: absolute;
+    max-width: 70%;
+    max-height: 70%;
+    bottom: 42%;
+    right: 15%;
+}
+
+.nextlogo-hah{ 
+    position: absolute;
+    max-width: 70%;
+    max-height: 70%;
+    bottom: 25%;
+    right: 15%;
+}
+
+.nextlogo-pdm{ 
+    position: absolute;
+    max-width: 80%;
+    max-height: 80%;
+    bottom: 20%;
+    right: 10%;
+}
+.nextlogo-ssl{ 
+    position: absolute;
+    max-width: 80%;
+    max-height: 80%;
+    bottom: 10%;
+    right: 10%;
+}
+
+.nextlogo-wf{
+    position: absolute;
+    max-width: 70%;
+    max-height: 70%;
+    bottom: 30%;
+    right: 15%;
+}
+
+.smallicon{
+    height: 80px;
+    filter: grayscale(100%);
+}
+
+.boxtop{
+    position:absolute;
+    width: 100%;
+    background: rgba(53,53,53,0.8);
+}
+
+.right{
+    right: 0px;
+}
+
+.verticalAlignment{
+    position:absolute;
+    top: 50%;
+    width: 94%;
+    transform: translateY(-50%);
+}
+
+.showme{
+    display: none;
+}
+
+.showhim:hover .showme {
+    display: block;
+}
+
+
+@media only screen and (max-width: 770px){ 
+    .postImg{
+        width:95%;
+        object-fit: contain;
+        object-position: 0 0;
+        height:100%;
+    }
+
+    .mw80{
+        max-width: 95% !important;
+    }
+
+    .box{
+        height: 80px !important;
+        width: 80px !important;
+    }
+
+    .nextimage{
+        height: 80px !important;
+    }
+
+    .next{
+        height: 80px !important;
+    }
+
+    .smallicon{
+        height:60px !important;
+    }
+
+    .next{
+        height:100px;
+        max-width: 110px;
+        object-fit: cover;
+        float: left;
+    }
+
+    .verticalAlignment{
+        position:absolute;
+        top: 50%;
+        width: 90%;
+        transform: translateY(-50%);
+    }
+}
+
+@media only screen and (max-width: 650px){ 
+    
+    .nextimage{
+        display: none;
+    }
+
+    .boxtop{
+        display: none;
+        background: rgba(53,53,53,0.0);
+    }
+
+    .box {
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    .smallicon{
+        height: 30px !important;
+    }
+
+    .verticalAlignment{
+        display: none;
+    }
+}

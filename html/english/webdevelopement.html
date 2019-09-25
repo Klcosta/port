@@ -19,14 +19,16 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/clo4ucy.css">
     <link href="../../assets/CSS/style.css" type="text/css" rel="stylesheet">
+    <link href="../../assets/CSS/navbarStyle.css" type="text/css" rel="stylesheet">
+    <link href="../../assets/CSS/portfolioStyle.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="../../assets/images/favicon.png">
-    <title>Portofolio-EN</title>
+    <title>Keith Costa</title>
 
 </head>
 
 <body>
 
-    <nav id="navbar" class="header fixed-top navbar navbar-expand-sm navbar-dark p-1 w100">
+    <nav id="navbar" class="wv100 header fixed-top navbar navbar-expand-sm navbar-dark p-1">
         <a href="../../index.html">
             <img src="../../assets/images/logo(horizontal).png" class="full logo">
             <img src="../../assets/images/icon.png" class="icon logo">
@@ -38,12 +40,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-1">
-                    <a class="nav-link font" href="../../index.html#whatido">
-                        <div class="green orangehover">What I Do</div>
+                    <a class="nav-link font" href="AboutMe.html">
+                        <div class="green orangehover">AboutMe</div>
                     </a>
                 </li>
                 <li class="nav-item mx-1 dropdownparent">
-                    <a class="nav-link font" href="../../index.html#webdevelopment">
+                    <a class="nav-link font" href="#webdevelopment">
                         <div class="green orangehover">Portfolio</div>
                     </a>
                     <ul class="dropdown font green nodecoration p-2 rounded-bottom">
@@ -58,117 +60,139 @@
                             </a>
                         </li>
                         <!-- <li>
-                            <a href="../../index.html#webdevelopement">
-                                <div class="font green orangehover"> Both </div>
-                            </a>
-                        </li> -->
+                                                    <a href="#webdevelopement">
+                                                        <div class="font green orangehover"> Both </div>
+                                                    </a>
+                                                </li> -->
                     </ul>
                 </li>
                 <li class="nav-item mx-1">
-                    <a class="nav-link font" href="../../index.html#contact">
+                    <a class="nav-link font" href="AboutMe.html#contact">
                         <div class="green orangehover">Contact</div>
                     </a>
                 </li>
-                <li class="nav-item mx-1">
-                    <a id="espanñol" class="nav-link font" href="../español/desarolloweb.html">
-                        <div class="green orangehover">Español</div>
-                    </a>
-                </li>
+                <!-- <li class="nav-item mx-1">
+                                            <a id="espanñol" class="nav-link font" href="../../index-español.html">
+                                                <div class="green orangehover">Español</div>
+                                            </a>
+                                        </li> -->
             </ul>
         </div>
     </nav>
+
     <div class="home">
         <img class="gdmainimage" src="../../assets/images/webdevelopementbg.jpg">
         <div class="font orange thirtypixelfont subsectiontitle w100">
-            Web Developement
+            Web Development
         </div>
     </div>
     <div class="bar greenbg"></div>
+    <div class="container my-4">
+        <div class="row">
 
-    <div class="container-fluid p-0">
-        <div class="row m-0 w100">
-            <div class="col-12 col-sm-6 col-lg-3 grayscale wrapper pointer vh100">
-                <div class="row h25 greenbg">
-                    <a class="w100" target="_blank" href="https://klcosta.github.io/sousChef/index.html">
-                        <div class="col-12 text-white text-right">
-                            <div class="font twentypixelfont lineheight90 mt-3">
-                                sousChef
-                            </div>
-                            <div class="lightfont">
-                                UX/UI • Front-End
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="row h75">
-                    <a href="https://klcosta.github.io/sousChef/index.html" target="_blank">
-                        <div class="col-12 p-0 h100">
-                            <img class="cardimg" src="../../assets/images/SousChefbg.jpg">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 grayscale pointer vh100">
-                <a href="https://klcosta.github.io/Word-Guess-Game/" target="_blank">
-                    <div class="row h75">
-                        <div class="col-12 p-0 h100">
+            <!-- Box 1 -->
+
+            <div class="col-12 col-md-6 col-lg-4 h400">
+                <div class="showhim">
+                    <div>
+                        <div class="w100">
                             <img class="cardimg" src="../../assets/images/Guessthewordbg.png">
                         </div>
                     </div>
-                    <div class="row h25">
-                        <div class="col-12 greenbg text-white text-right">
-                            <div class="font twentypixelfont lineheight90 mt-3">
-                                World Capital Guess Game
+                    <div class="cardimg testbox p-3 showme">
+                        <div class="font text-white twentytwopixelfont lineheight95">
+                            World Capital Guess Game
+                        </div>
+                        <div class="fontlight text-white sixteenpixelfont lineheight95">
+                            Front-End • HTML • CSS • JavaScript
+                        </div>
+                        <a class="font text-white twentypixelfont orangehover" href="wcgg.html">
+                            <div class="text-right more">
+                                Learn More
                             </div>
-                            <div class="lightfont">
-                                Front-End
-                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+
+            <div class="col-12 col-md-6 col-lg-4 h400">
+                <div class="showhim">
+                    <div>
+                        <div class="w100">
+                            <img class="cardimg" src="../../assets/images/hyggeathomebg.jpg">
                         </div>
                     </div>
-                </a>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 grayscale wrapper pointer vh100">
-                <div class="row h25 greenbg">
-                    <a class="w100" href="https://klcosta.github.io/Trivia-Game/" target="_blank">
-                        <div class="col-12 text-white text-right">
-                            <div class="font twentypixelfont lineheight90 mt-3">
-                                US History Trivia
-                            </div>
-                            <div class="lightfont">
-                                Front-End
-                            </div>
+                    <div class="cardimg testbox p-3 showme">
+                        <div class="font text-white twentytwopixelfont lineheight95">
+                            Hygge at Home
                         </div>
-                    </a>
+                        <div class="fontlight text-white sixteenpixelfont lineheight95">
+                            UX/UI • Front-End • HTML • CSS • JavaScript
+                        </div>
+                        <a class="font text-white twentypixelfont orangehover" href="hahen.html">
+                            <div class="text-right more">
+                                Learn More
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="row h75">
-                    <a href="https://klcosta.github.io/Trivia-Game/" target="_blank">
-                        <div class="col-12 p-0 h100">
+            </div>
+
+            <!-- Box 3 -->
+
+            <div class="col-12 col-md-6 col-lg-4 h400">
+                <div class="showhim">
+                    <div>
+                        <div class="w100">
+                            <img class="cardimg" src="../../assets/images/SousChefbg.jpg">
+                        </div>
+                    </div>
+                    <div class="cardimg testbox p-3 showme">
+                        <div class="font text-white twentytwopixelfont lineheight95">
+                            SousChef
+                        </div>
+                        <div class="fontlight text-white sixteenpixelfont lineheight95">
+                            UX/UI • Front-End • HTML • CSS • JavaScript
+                        </div>
+                        <a class="font text-white twentypixelfont orangehover" href="scen.html">
+                            <div class="text-right more">
+                                Learn More
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 4 -->
+
+            <div class="col-12 col-md-6 col-lg-4 h400">
+                <div class="showhim">
+                    <div>
+                        <div class="w100">
                             <img class="cardimg" src="../../assets/images/ustriviabg.png">
                         </div>
-                    </a>
+                    </div>
+                    <div class="cardimg testbox p-3 showme">
+                        <div class="font text-white twentytwopixelfont lineheight95">
+                            US History Trivia Game
+                        </div>
+                        <div class="fontlight text-white sixteenpixelfont lineheight95">
+                            Front-End • HTML • CSS • JavaScript
+                        </div>
+                        <a class="font text-white twentypixelfont orangehover" href="usten.html">
+                            <div class="text-right more">
+                                Learn More
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 grayscale pointer vh100">
-                <a href="hahen.html">
-                    <div class="row h75">
-                        <div class="col-12 p-0 h100">
-                            <img class="cardimg" src="../../assets/images/hyggeathomebg.jpg" target="_blank">
-                        </div>
-                    </div>
-                    <div class="row h25">
-                        <div class="col-12 greenbg text-white text-right">
-                            <div class="font twentypixelfont lineheight90 mt-3">
-                                HYGGE at HOME
-                            </div>
-                            <div class="lightfont">
-                                UX/UI • Front-End
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+
         </div>
     </div>
+
 
     <!--FOOTER-->
 
@@ -218,19 +242,19 @@
                             <div class="orangehover">Home</div>
                         </li>
                     </a>
-                    <a href="../../index.html#whatido">
+                    <a href="AboutMe.html">
                         <li class="nodecoration text-white fontLight fourteenpixelfont">
-                            <div class="orangehover">What I do?</div>
+                            <div class="orangehover">About Me & Contact</div>
                         </li>
                     </a>
-                    <a href="../../index.html#webdevelopment">
+                    <a href="graphicdesign.html">
                         <li class="nodecoration text-white fontLight fourteenpixelfont">
-                            <div class="orangehover">Portfolio</div>
+                            <div class="orangehover">Graphic Design</div>
                         </li>
                     </a>
-                    <a href="../../index.html#contact">
+                    <a href="webdevelopement.html">
                         <li class="nodecoration text-white fontLight fourteenpixelfont">
-                            <div class="orangehover">Contact</div>
+                            <div class="orangehover">Web Development</div>
                         </li>
                     </a>
                 </ul>

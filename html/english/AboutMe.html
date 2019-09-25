@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/clo4ucy.css">
+    <link href="../../assets/CSS/style.css" type="text/css" rel="stylesheet">
+    <link href="../../assets/CSS/navbarStyle.css" type="text/css" rel="stylesheet">
+    <link href="../../assets/CSS/aboutMeStyle.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="../../assets/images/favicon.png">
+    <title>Keith Costa</title>
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+    <nav id="navbar" class="wv100 header fixed-top navbar navbar-expand-sm navbar-dark p-1">
+        <a href="../../index.html">
+            <img src="../../assets/images/logo(horizontal).png" class="full logo">
+            <img src="../../assets/images/icon.png" class="icon logo">
+        </a>
+        <button id="white" class="navbar-toggler greenborder" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon greenborder greenimportant"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-1">
+                    <a class="nav-link font" href="AboutMe.html">
+                        <div class="green orangehover">AboutMe</div>
+                    </a>
+                </li>
+                <li class="nav-item mx-1 dropdownparent">
+                    <a class="nav-link font" href="#webdevelopment">
+                        <div class="green orangehover">Portfolio</div>
+                    </a>
+                    <ul class="dropdown font green nodecoration p-2 rounded-bottom">
+                        <li>
+                            <a class="nodecoration" href="webdevelopement.html">
+                                <div class="font green mb-1 orangehover"> Web Development</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="graphicdesign.html">
+                                <div class="font green mb-1 orangehover"> Graphic Design </div>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#webdevelopement">
+                                <div class="font green orangehover"> Both </div>
+                            </a>
+                        </li> -->
+                    </ul>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link font" href="#contact">
+                        <div class="green orangehover">Contact</div>
+                    </a>
+                </li>
+                <!-- <li class="nav-item mx-1">
+                    <a id="espanñol" class="nav-link font" href="../../index-español.html">
+                        <div class="green orangehover">Español</div>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+     <!-- WHAT I DO -->
+
+    <div class="container-fluid py-5 px-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-md-pull-">
+                <div class="bg-white rounded">
+                    <div class="py-1 font green my-4 px-4">
+                        <div class="row pt-2 pb-1 pl-4 twentypixelfont">
+                            ABOUT ME
+                        </div>
+                        <div class="row fontLight smallertext px-4 pb-2 justify">
+                            I am Keith Costa. I am constantly working on improving my skills and understanding of design
+                            and
+                            web development, in order to provide my clients and employers with high quality work in a
+                            wide
+                            range of interrelated areas. I look forward to helping more organizations develop a cohesive
+                            image across print and web platforms, all in one convenient place.
+                            <br><br>
+                            I am proficient in Adobe Illustrator, Photoshop and Indesign. I’ve worked with several
+                            brands to
+                            create brands, business cards, pamphlets, presentations, promotional materials… I am
+                            experienced
+                            in front end web development languages such as HTML, CSS and JavaScript. I have developed
+                            several web sites and applications.
+                            <br><br>
+                            Please feel free to check out some of my work, read further about my services and reach out
+                            with
+                            any questions or concerns.
+                            <br><br>
+                            Sincerely,
+                            <br>
+                            Keith Costa
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-md-push-8 py-4 pl-4 emptybox mt-5">
+                <img class="aboutmeImage mx-auto"
+                    src="../../assets/images/keithcosta2.jpg"> 
+            </div>
+        </div>
+    </div>
+
+    <!-- REVIEWS -->
+
+    <div class="container-fluid greenbg">
+        <div class="row">
+            <div class="col-1">
+                <img id="leftArrow" class="box pointer" src="../../assets/images/leftarrowiconv2.png">
+            </div>
+            <div id="reviews" class="col-10 font text-white p-4"> </div>
+            <div class="col-1"> 
+                <img id="rightArrow" class="box right pointer" src="../../assets/images/rightarrowiconv2.png">
+            </div>
+        </div>
+    </div>
+    <!--CONTACT-->
+
+    <div id="contact" class="cointainer-fluid p-2 pb-3 mt-5">
+        <div class="row w100 m-0">
+            <div class="col-12 text-center font green thirtypixelfont mb-5">
+                Lets Work Together. Get in Touch
+            </div>
+        </div>
+        <div id="contactform" class="row w100 m-0">
+            <div class="col-md-6 col-sm-12">
+                <form>
+                    <input class="greenborder1 green rounded fontLight p-2 w100 my-1" type="text" id="name" name="name"
+                        placeholder="Your name...">
+                    <input class="greenborder1 rounded fontLight green p-2 w100 mb-2 mt-1" type="text" id="email"
+                        name="email" placeholder="example@gmail.com">
+                </form>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <form>
+                    <textarea class="greenborder1 green rounded fontLight p-2 pt-2 w100 mt-1 lineheight155" rows="3" type="text"
+                        id="message" name="message" placeholder="What can I help you with?"></textarea>
+                </form>
+            </div>
+        </div>
+        <div id="submitrow" class="row w100 mb-2">
+            <div class="col-12 text-center">
+                <button id="submit"
+                    class="ml-3 mt-2 font pointer green thirtypixelfont text-center greenborderLM rounded">
+                    SUBMIT
+                </button>
+            </div>
+        </div>
+
+        <!--SOCIAL MEDIA-->
+
+        <div class="row w100">
+            <div class="col-12 text-center">
+                <a href="https://www.instagram.com/keithcostadesigns/" target="_blank">
+                    <img class="linkimg grayscale" src="../../assets/images/InstagramIconv2.png">
+                </a>
+                <a href="https://github.com/Klcosta" target="_blank">
+                    <img class="linkimg grayscale" src="../../assets/images/GitHub-Mark-Light-120px-plusv2.png">
+                </a>
+                <a href="https://www.behance.net/Keithcostadesigns" target="_blank">
+                    <img class="linkimg grayscale" src="../../assets/images/behance-logov2.png">
+                </a>
+                <a href="https://www.linkedin.com/in/keith-costa-1ba11860/" target="_blank">
+                    <img class="linkimg grayscale" src="../../assets/images/linkedin-logo.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--SOCIAL MEDIA-->
+
+    <!--FOOTER-->
+
+    <div class="container-fluid bg-secondary">
+        <div class="row d-flex justify-content-around pt-3 pb-3">
+            <div class="full col-6">
+                <div class="font text-white twentypixelfont mt-3">
+                    KEITH COSTA
+                </div>
+                <div class="fontLight text-white fourteenpixelfont mr-2">
+                    I am constantly working on improving my skills and understanding, in order to provide my clients and
+                    employers with high quality work in a wide range of interrelated areas. Thank you for visiting my
+                    portfolio. I hope to hear from you soon.
+                </div>
+            </div>
+            <div class="col-3 mt-3">
+                <div class="text-white font">
+                    Social
+                </div>
+                <div class="text-white font">
+                    <ul class="pl-0 mx-auto">
+                        <a href="https://www.linkedin.com/in/keith-costa-1ba11860/" target="_blank">
+                            <li class="nodecoration text-white fontLight fourteenpixelfont">
+                                <div class="orangehover">
+                                    linkedIn
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.instagram.com/keithcostadesigns/" traget="_blank">
+                            <li class="nodecoration text-white fontLight fourteenpixelfont">
+                                <div class="orangehover">
+                                    Instagram
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://github.com/Klcosta" target="_blank">
+                            <li class="nodecoration text-white fontLight fourteenpixelfont">
+                                <div class="orangehover">
+                                    GitHub
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.behance.net/Keithcostadesigns" target="_blank">
+                            <li class="nodecoration text-white fontLight fourteenpixelfont">
+                                <div class="orangehover">
+                                    Behance
+                                </div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3 mt-3 ">
+                <div class="text-white font">
+                    Pages
+                </div>
+                <ul class="pl-0">
+                    <a href="../../index.html">
+                        <li class="nodecoration text-white fontLight fourteenpixelfont">
+                            <div class="orangehover">Home</div>
+                        </li>
+                    </a>
+                    <a href="AboutMe.html">
+                        <li class="nodecoration text-white fontLight fourteenpixelfont">
+                            <div class="orangehover">About Me & Contact</div>
+                        </li>
+                    </a>
+                    <a href="graphicdesign.html">
+                        <li class="nodecoration text-white fontLight fourteenpixelfont">
+                            <div class="orangehover">Graphic Design</div>
+                        </li>
+                    </a>
+                    <a href="webdevelopement.html">
+                        <li class="nodecoration text-white fontLight fourteenpixelfont">
+                            <div class="orangehover">Web Development</div>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script> -->
+    <script type="text/javascript" src="../../assets/javascript/java.js"></script>
+
+</body>
+
+</html>

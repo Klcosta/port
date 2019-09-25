@@ -1,0 +1,57 @@
+/* Icon/Logo */
+
+.icon{
+    display: none;
+    height: 49px;
+ }
+ 
+.full{
+    height: 50px;
+}
+
+.icon.scroll{
+    display: none;
+    height: 30px;
+ }
+ 
+.full.scroll{
+    height: 30px;
+}
+
+@media only screen and (max-width: 1000px){ 
+    .full{
+      display: none;
+    }
+ 
+    .icon{
+      display: block;
+    }
+ }
+
+ .navbar{
+    /* position: absolute; */
+    width: 100%;
+}
+
+/* Dropdown Menu */
+
+.dropdown{
+    position: absolute;
+    display: none;
+}
+
+.dropdownparent:hover .dropdown{
+    display:block
+}
+
+/* White Background */
+
+.scroll{
+    background-color: white;
+    transition: 750ms ease-in-out;
+}
+
+.scrollImg{
+    height:25px !important;
+    transition: 750ms;
+}
