@@ -14,13 +14,13 @@
 }
 
 .buttons{
-    position: absolute;
-    top: 60%;
+    /* position: absolute; */
+    /* top: 60%; */
     z-index: 2;
-    left: 0%;
-    width: 60vw;
-    left: 50%;
-    transform: translateX(-50%)
+    /* left: 0%; */
+    /* width: 60vw; */
+    /* left: 50%; */
+    /* transform: translateX(-50%) */
 }
 
 .hometest{
@@ -49,21 +49,33 @@
     flex-wrap: wrap;
 }
 
-.contents1{
+.testbox{
     position: absolute;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
     top: 45%;
     z-index: 3;
 }
 
-.contents2{
+.whitebackground{
+    background-color: rgba(255, 255, 255, 0.9);;
+}
+
+/* .contents1{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: 45%;
+    z-index: 3;
+} */
+
+/* .contents2{
     position: absolute;
     left: 50%;
     top: 54%;
     transform: translateX(-50%);
     z-index: 3;
-}
+} */
 
 .whitebox{
     background: white;
@@ -77,6 +89,14 @@
     transform: translateX(-50%);
     display: none;
 }
+
+@media only screen and (max-width: 1340px){ 
+    .testbox{
+        width: 690px;
+    }
+
+}
+
 
  @media only screen and (max-width: 1055px){ 
     .contents1{
@@ -97,6 +117,10 @@
         top: 51%;
         height: 230px;
         width: 400px;
+    }
+
+    .testbox{
+        width: 670px;
     }
 
 }
@@ -126,6 +150,11 @@
     .contents2{
         display: none;
     }
+
+    .testbox{
+        width: 350px;
+    }
+
  }
 
  @media only screen and (max-width: 610px){ 
