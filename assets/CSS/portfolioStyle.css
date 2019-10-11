@@ -61,4 +61,8 @@
         left: 5px;
         width: 75vw
     }
+
+    .showme{
+        display: block;
+    }
 }
