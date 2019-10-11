@@ -32,6 +32,7 @@
     right: 15%;
 }
 
+
 .nextlogo-sc{ 
     position: absolute;
     max-width: 70%;
@@ -99,6 +100,54 @@
 
 .showhim:hover .showme {
     display: block;
+}
+
+.postmainimage{
+    object-fit: cover;
+    width: 100%;
+    max-height: 80vh;
+}
+
+.postmainlogo{
+    position: absolute;
+    bottom: 45%;
+    left: 15%;
+    max-width: 70%;
+}
+
+.postmainlogo-gotdp{
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    max-width: 80%;
+}
+
+.postmainlogo-pdm{
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    max-width: 70%;
+}
+
+.postmainlogo-ssl{
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    max-width: 60%;
+}
+
+.postmainlogo-wf{
+    position: absolute;
+    bottom: 22%;
+    left: 20%;
+    max-width: 60%;
+}
+
+.postmainlogo-hah{
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+    max-width: 40%;
 }
 
 
