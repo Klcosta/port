@@ -94,14 +94,12 @@ $("#white").on("click", (event) => {
 $("#graphicDesignButton")
     .mouseover(
         function(){
-            console.log("amazing")
             $("#mainBgImage2").attr("src" , "assets/images/graphicdesignbg.jpg")
             $("#mainBgImage2").fadeIn("slow")
             $("#testbox").addClass("whitebackground")
         }
     )
     .mouseout(function(){
-            console.log("less-amazing")
             $("#mainBgImage2").fadeOut("slow")
             $("#testbox").removeClass("whitebackground")
     })
@@ -109,14 +107,12 @@ $("#graphicDesignButton")
 $("#webDevelopmentButton")
     .mouseover(
         function(){
-            console.log("amazing")
             $("#mainBgImage2").attr("src" , "assets/images/webdevelopementbg.jpg")
             $("#mainBgImage2").fadeIn("slow")
             $("#testbox").addClass("whitebackground")
         }
     )
     .mouseout(function(){
-            console.log("less-amazing")
             $("#mainBgImage2").fadeOut("slow")
             $("#testbox").removeClass("whitebackground")
     })
