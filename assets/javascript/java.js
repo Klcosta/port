@@ -119,34 +119,24 @@ $("#webDevelopmentButton")
 
 //SLIDER//
 
-var reviews=["Keith has been an absolute pleasure to work with. He is very respectful of my ideas and wants to make sure that he works hard to bring my vision to life. Keith is extremely patient and talented. Anyone would be lucky to select Keith for a project. Thank you for everything you have done for me!" , "Working with Keith has been nothing but amazing!! He's always there, catches to things very quickly and had 100% of this work done in time. I will definitely recommend him. Quality of work was A+. No complaints, just great work, great communication!! Thank you Keith!", "Keith is a very passionate designer who strives to complete the design task with utmost diligence and quality exceeding expectations. He certainly proved to be a very reliable, dependable and resourceful designer - I plan to continue working with him on many projects I have in my roadmap. Thanks Keith - You are awesome!"]
+let reviews=["Keith has been an absolute pleasure to work with. He is very respectful of my ideas and wants to make sure that he works hard to bring my vision to life. Keith is extremely patient and talented. Anyone would be lucky to select Keith for a project. Thank you for everything you have done for me!" , "Working with Keith has been nothing but amazing!! He's always there, catches to things very quickly and had 100% of this work done in time. I will definitely recommend him. Quality of work was A+. No complaints, just great work, great communication!! Thank you Keith!", "Keith is a very passionate designer who strives to complete the design task with utmost diligence and quality exceeding expectations. He certainly proved to be a very reliable, dependable and resourceful designer - I plan to continue working with him on many projects I have in my roadmap. Thanks Keith - You are awesome!"]
 
-var reviewers=["Nate Holmes" , "Ari Berman" , "Bharat Kumar"]
-var organization = ["Secured Tech Solutions" ,  "UpWork Customer" , "EdNexus"]
+let reviewers=["Nate Holmes" , "Ari Berman" , "Bharat Kumar"]
+let organization = ["Secured Tech Solutions" ,  "UpWork Customer" , "EdNexus"]
 
-// Count will keep track of the index of the currently displaying picture.
-var count = 0;
+let count = 0;
 
-// This function will replace display whatever image it's given
-// in the 'src' attribute of the img tag.
 function displayReview() {
     $("#reviews").html("<div class='text-center'>"  + reviews[count] + "</div><br> <div class='text-center'>" + reviewers[count] + "</div><div class='text-center'>" +organization[count] + "</div>");
     nextImage()
 }
 
 function nextImage() {
-
-    // TODO: Use a setTimeout to run displayImage after 1 second.
     t = setTimeout(displayReview, 15000);
-
-    console.log("1:" + count)
     if (count === 2) {
         count = 0;
     }
-
     else{count ++}
-
-    console.log("2:" + count)
 }
 
 function rightArrow() {
@@ -156,15 +146,12 @@ function rightArrow() {
 
 function leftArrow() {
     clearTimeout(t);
-    console.log("clicked2.0  " + count)
     if (count === 2){
-        console.log("yay")
         count = 0
     }
     else{
     count ++;
     }
-    console.log("4:" + count)
 
     displayReview()
 }
