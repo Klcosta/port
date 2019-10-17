@@ -9,3 +9,35 @@
     right: 15px;
 }
 
+.aboutmeImage{
+    max-height: 350px;
+    max-width: 100%;
+    /* margin-left: 20%; */
+}
+
+@media only screen and (max-width: 770px){ 
+    .aboutmeImage{
+        display: none !important;
+    }
+
+@media only screen and (max-width: 375px){ 
+
+    .paddingdelete {
+        padding: 0px !important;
+    }
+
+    .smcenter{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%)
+    }
+
+    .smmargintop{
+        margin-top: 30px;
+    }
+
+    .paddingbottomzero{
+        padding-bottom: 0px !important;
+    }
+}
+

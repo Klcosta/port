@@ -113,12 +113,6 @@
     width: 100%
 }
 
-.aboutmeImage{
-    max-height: 350px;
-    max-width: 100%;
-    /* margin-left: 20%; */
-}
-
 .learnmore{
     width:240px;
 }
@@ -144,13 +138,6 @@
 } */
 
 @media only screen and (max-width: 770px){ 
-    .aboutmeImage{
-        display: none !important;
-    }
-
-    /* .smallertext{
-        font-size:14px;
-    } */
 
     .emptybox{
         padding: 0px !important;
