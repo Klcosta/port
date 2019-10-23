@@ -20,7 +20,11 @@
     float: left;
 }
 
-@media only screen and (max-width: 770px){ 
+#contactform{
+    max-width: 1300px;
+}
+
+@media only screen and (max-width: 768px){ 
     .aboutmeImage{
         display: none !important;
     }
