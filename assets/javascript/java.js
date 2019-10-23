@@ -161,3 +161,15 @@ $("#rightArrow").click(rightArrow)
 $("#leftArrow").click(leftArrow)
 
 displayReview();
+
+//Git Hub Button Hover Effect//
+
+$("#gitHubIcon")
+    .mouseover(
+        function(){
+            $("#gitHubIcon").attr("src" , "../../assets/images/GitHub-Mark-Light-120px-plusv2hover.png")
+        }
+    )
+    .mouseout(function(){
+            $("#gitHubIcon").attr("src" , "../../assets/images/GitHub-Mark-Light-120px-plusv2.png")
+    })

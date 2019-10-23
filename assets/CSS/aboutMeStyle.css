@@ -26,6 +26,26 @@
     margin-right: auto;
 }
 
+.linkimg{
+    height: 100px;
+    margin-top: 25px;
+    margin-right: 40px;
+    margin-left: 40px
+}
+
+.linkimggray{
+    position:relative;
+    left:-186.5px;
+}
+
+@media only screen and (max-width: 760px){ 
+    .linkimg{
+        height: 65px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
 @media only screen and (max-width: 768px){ 
     .aboutmeImage{
         display: none !important;
