@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -19,15 +18,19 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/clo4ucy.css">
     <link href="../../assets/CSS/style.css" type="text/css" rel="stylesheet">
+    <link href="../../assets/CSS/navbarStyle.css" type="text/css" rel="stylesheet">
+    <link href="../../assets/CSS/portfolioStyle.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="../../assets/images/favicon.png">
-    <title>Portofolio-ES</title>
+    <title>Keith Costa Diseños</title>
 
 </head>
 
 <body>
 
-    <nav id="navbar" class="header fixed-top navbar navbar-expand-sm navbar-dark p-1 w100">
-        <a href="../../index-español.html">
+    <!-- NAVBAR -->
+
+    <nav id="navbar" class="wv100 header fixed-top navbar navbar-expand-sm navbar-dark p-1">
+        <a href="../../indexes.html">
             <img src="../../assets/images/logo(horizontal).png" class="full logo">
             <img src="../../assets/images/icon.png" class="icon logo">
         </a>
@@ -38,12 +41,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-1">
-                    <a class="nav-link font" href="../../index-español.html#whatido">
-                        <div class="green orangehover">¿Que Hago?</div>
+                    <a class="nav-link font" href="sobremi.html">
+                        <div class="green orangehover">Sobre Mí</div>
                     </a>
                 </li>
                 <li class="nav-item mx-1 dropdownparent">
-                    <a class="nav-link font" href="../../index-español.html#webdevelopment">
+                    <a class="nav-link font" href="#webdevelopment">
                         <div class="green orangehover">Portfolio</div>
                     </a>
                     <ul class="dropdown font green nodecoration p-2 rounded-bottom">
@@ -57,15 +60,10 @@
                                 <div class="font green mb-1 orangehover"> Diseño Grafico </div>
                             </a>
                         </li>
-                        <!-- <li>
-                            <a href="../../index-español.html#webdevelopement">
-                                <div class="font green orangehover"> Ambos </div>
-                            </a>
-                        </li> -->
                     </ul>
                 </li>
                 <li class="nav-item mx-1">
-                    <a class="nav-link font" href="../../index-español.html#contact">
+                    <a class="nav-link font" href="sobremi.html#contacto">
                         <div class="green orangehover">Contacto</div>
                     </a>
                 </li>
@@ -77,6 +75,7 @@
             </ul>
         </div>
     </nav>
+
     <div class="home">
         <img class="gdmainimage" src="../../assets/images/graphicdesignbg.jpg">
         <div class="font orange thirtypixelfont subsectiontitle w100">
@@ -85,90 +84,137 @@
     </div>
     <div class="bar greenbg"></div>
 
-    <div class="container-fluid p-0">
-        <div class="row m-0 w100">
-            <div class="col-12 col-sm-6 col-lg-3 grayscale wrapper pointer vh100">
-                <div class="row h25 greenbg">
-                    <a class="w100" href="stses.html">
-                        <div class="col-12 text-white text-right">
-                            <div class="font twentypixelfont lineheight90 mt-3">
-                                Secured Tech Solutions
-                            </div>
-                            <div class="lightfont">
-                                Branding • Materiales Promocionales
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="row h75">
-                    <a href="stses.html">
-                        <div class="col-12 p-0 h100">
+    <div class="container my-4">
+        <div class="row">
+
+            <!-- Box 1 -->
+
+            <div class="col-12 col-md-6 col-lg-4 h400">
+                <div class="showhim">
+                    <div>
+                        <div class="w100">
                             <img class="cardimg" src="../../assets/images/stsbg.png">
                         </div>
-                    </a>
+                    </div>
+                    <div class="cardimg testbox p-3 showme">
+                        <div class="font text-white twentytwopixelfont lineheight95">
+                            Secured Tech Solutions
+                        </div>
+                        <div class="fontlight text-white sixteenpixelfont lineheight95">
+                            Branding • Materiales Promocionales
+                        </div>
+                        <a class="font text-white twentypixelfont orangehover" href="stses.html">
+                            <div class="text-right more">
+                                Aprender más
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 grayscale pointer vh100">
-                <a href="pdmes.html">
-                    <div class="row h75">
-                        <div class="col-12 p-0 h100">
+
+            <!-- Box 2 -->
+
+            <div class="col-12 col-md-6 col-lg-4 h400">
+                <div class="showhim">
+                    <div>
+                        <div class="w100">
                             <img class="cardimg" src="../../assets/images/plandemarketingbg2.png">
                         </div>
                     </div>
-                    <div class="row h25">
-                        <div class="col-12 greenbg text-white text-right">
-                            <div class="font twentypixelfont lineheight90 mt-3">
-                                Cum Laude 21 Presentación Del Negocio
-                            </div>
-                            <div class="lightfont">
-                                Presentación
-                            </div>
+                    <div class="cardimg testbox p-3 showme">
+                        <div class="font text-white twentytwopixelfont lineheight95">
+                            Cum Laude 21 Presentación del Negocio
                         </div>
+                        <div class="fontlight text-white sixteenpixelfont lineheight95">
+                            Presentación
+                        </div>
+                        <a class="font text-white twentypixelfont orangehover" href="pdmes.html">
+                            <div class="text-right more">
+                                Aprender Más
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 grayscale wrapper pointer vh100">
-                <div class="row h25 greenbg">
-                    <a class="w100" href="ssles.html">
-                        <div class="col-12 text-white text-right">
-                            <div class="font twentypixelfont lineheight90 mt-3">
-                                Sueña Sin Limites
-                            </div>
-                            <div class="lightfont">
-                                Materiales Promocionales
-                            </div>
-                        </div>
-                    </a>
                 </div>
-                <div class="row h75">
-                    <a href="ssles.html">
-                        <div class="col-12 p-0 h100">
+            </div>
+
+            <!-- Box 3 -->
+
+            <div class="col-12 col-md-6 col-lg-4 h400">
+                <div class="showhim">
+                    <div>
+                        <div class="w100">
                             <img class="cardimg" src="../../assets/images/sslbg2.png">
                         </div>
-                    </a>
+                    </div>
+                    <div class="cardimg testbox p-3 showme">
+                        <div class="font text-white twentytwopixelfont lineheight95">
+                            Sueña Sin Limites
+                        </div>
+                        <div class="fontlight text-white sixteenpixelfont lineheight95">
+                            Materiales Promocionales
+                        </div>
+                        <a class="font text-white twentypixelfont orangehover" href="ssles.html">
+                            <div class="text-right more">
+                                Aprender Más
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 grayscale pointer vh100">
-                <a href="wfes.html">
-                    <div class="row h75">
-                        <div class="col-12 p-0 h100">
+
+            <!-- Box 4 -->
+
+            <div class="col-12 col-md-6 col-lg-4 h400">
+                <div class="showhim">
+                    <div>
+                        <div class="w100">
                             <img class="cardimg" src="../../assets/images/winningfunnelbg2.jpg">
                         </div>
                     </div>
-                    <div class="row h25">
-                        <div class="col-12 greenbg text-white text-right">
-                            <div class="font twentypixelfont lineheight90 mt-3">
-                                Winning Funnel
+                    <div class="cardimg testbox p-3 showme">
+                        <div class="font text-white twentytwopixelfont lineheight95">
+                            Winning Funnel
+                        </div>
+                        <div class="fontlight text-white sixteenpixelfont lineheight95">
+                            Branding
+                        </div>
+                        <a class="font text-white twentypixelfont orangehover" href="wfes.html">
+                            <div class="text-right more">
+                                Aprender Más
                             </div>
-                            <div class="lightfont">
-                                Branding
-                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 5 -->
+
+            <div class="col-12 col-md-6 col-lg-4 h400">
+                <div class="showhim">
+                    <div>
+                        <div class="w100">
+                            <img class="cardimg" src="../../assets/images/ednexusbox.jpg">
                         </div>
                     </div>
-                </a>
+                    <div class="cardimg testbox p-3 showme">
+                        <div class="font text-white twentytwopixelfont lineheight95">
+                            edNexus
+                        </div>
+                        <div class="fontlight text-white sixteenpixelfont lineheight95">
+                            Iconografía
+                        </div>
+                        <a class="font text-white twentypixelfont orangehover" href="enes.html">
+                            <div class="text-right more">
+                                Aprender Más
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
+
 
     <!--FOOTER-->
 
@@ -211,26 +257,26 @@
                 </div>
             </div>
             <div class="col-3 mt-3 ">
-                <div class="text-white font">Pages</div>
+                <div class="text-white font">Paginas</div>
                 <ul class="pl-0">
-                    <a href="../../index-español.html#home">
+                    <a href="../../indexes.html">
                         <li class="nodecoration text-white fontLight fourteenpixelfont">
                             <div class="orangehover">Keith Costa</div>
                         </li>
                     </a>
-                    <a href="../../index-español.html#whatido">
+                    <a href="sobremi.html">
                         <li class="nodecoration text-white fontLight fourteenpixelfont">
-                            <div class="orangehover">¿Que Hago?</div>
+                            <div class="orangehover">Sobre Mí & Contacto</div>
                         </li>
                     </a>
-                    <a href="../../index-español.html#webdevelopment">
+                    <a href="diseñografico.html">
                         <li class="nodecoration text-white fontLight fourteenpixelfont">
-                            <div class="orangehover">Portfolio</div>
+                            <div class="orangehover">Diseño Grafico</div>
                         </li>
                     </a>
-                    <a href="../../index-español.html#contact">
+                    <a href="desarolloweb.html">
                         <li class="nodecoration text-white fontLight fourteenpixelfont">
-                            <div class="orangehover">Contacto</div>
+                            <div class="orangehover">Desarollo Web</div>
                         </li>
                     </a>
                 </ul>
@@ -238,7 +284,6 @@
             </div>
         </div>
     </div>
-
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="../../assets/javascript/java.js"></script>

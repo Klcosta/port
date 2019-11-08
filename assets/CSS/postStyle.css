@@ -80,6 +80,14 @@
     right: 10%;
 }
 
+.nextlogo-ust{
+    position: absolute;
+    max-width: 70%;
+    max-height: 70%;
+    bottom: 40%;
+    right: 15%;
+}
+
 .smallicon{
     height: 80px;
     filter: grayscale(100%);
@@ -165,6 +173,26 @@
     width: 40%;
 }
 
+.postmainlogo-sc{
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    width: 40%;
+}
+
+.postmainlogo-wcgg{
+    position: absolute;
+    bottom: 40%;
+    left: 15%;
+    width: 70%;
+}
+
+.postmainlogo-ust{
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+    width: 60%;
+}
 
 @media only screen and (max-width: 770px){ 
     .postImg{
