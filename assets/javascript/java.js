@@ -92,8 +92,7 @@ $("#white").on("click", (event) => {
 //CHANGE BACKGROUND ON HOVER
 
 $("#graphicDesignButton")
-    .mouseover(
-        function(){
+    .mouseover(function(){
             $("#mainBgImage2").attr("src" , "assets/images/graphicdesignbg.jpg")
             $("#mainBgImage2").fadeIn("slow")
             $("#testbox").addClass("whitebackground")
